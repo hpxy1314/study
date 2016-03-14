@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,GAAG,CAAC,KAAK,CAAC,IAAI,CCAd,IAAI,CAAC,KAAK,CDFP,IAAM,CCIT,OAAO,CAAC,KAAK,CAAC,KAAK",
-"sources": ["../src/b.scss","../src/a.scss"],
-"names": [],
-"file": "a.css"
-}
