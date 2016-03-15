@@ -5,23 +5,67 @@
 	<link rel="stylesheet" href="./lib/bootstrap3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./skin/style.css">
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="./lib/angular.js"></script>
+
+	<script type="text/javascript" src="./lib/vivus.js"></script>
 	<title>angularjs</title>
 
 </head>
 <body>
+<a href="" id="stop" style="color:red;position:absolute;right:0;top:0;">stop</a>
 
- <div class="topbar"></div>
-	<div class=" warp">
-		<div class="leftmenubar">
-			
-222
-		</div>
 
-		<!-- leftmenubar -->
 
-		
-	</div>
 
+
+
+
+
+
+<svg version="1.1" class="obturateur" id="mysvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="283.46px" height="283.46px" viewBox="0 0 283.46 283.46" enable-background="new 0 0 283.46 283.46" xml:space="preserve">
+<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="129.219" cy="130.672" r="65.234"/>
+<circle cx="100.117" cy="105.477" r="12.695"/>
+<circle cx="154.23" cy="108.406" r="12.5"/>
+<ellipse fill="none" stroke="#000000" stroke-miterlimit="10" cx="128.633" cy="147.664" rx="31.835" ry="16.992"/>
+<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="115.682" cy="148.115" r="6.385"/>
+<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="142.244" cy="148.115" r="6.385"/>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M82.324,85.331c0,0-18.73-7.784-34.746-6.221
+	c-16.016,1.563-26.953,13.671-26.953,13.671l-7.422,12.695c0,0,3.516,10.742,10.938,15.43c7.422,4.688,39.844,20.824,39.844,20.824"
+	/>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M182.326,92.781c0,0,6.268-26.953,28.924-29.297
+	c22.656-2.344,42.578,7.422,42.578,7.422s-7.422,7.813-12.891,25c-5.469,17.187-46.484,29.688-46.484,29.688"/>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M100.117,177.938c0,0.433,28.216,0.78,63.085,0.78"/>
+<ellipse cx="144.119" cy="221.613" rx="42.778" ry="31.951"/>
+<ellipse cx="104.707" cy="213.064" rx="4.59" ry="3.834"/>
+<ellipse cx="185.063" cy="216.23" rx="7.167" ry="7"/>
+<ellipse cx="103.563" cy="237.397" rx="13.667" ry="6.5"/>
+<ellipse cx="174.133" cy="246.23" rx="10.931" ry="7.334"/>
+</svg>
+
+
+<script>
+
+var a=function(){
+
+	return new Vivus('mysvg', {type: 'oneByOne', duration: 600, start: 'autostart', dashGap: 20, forceRender: false});
+}
+
+
+window.onload=function(){
+
+	var as=document.getElementById('mysvg');
+
+	as.onclick=function(){
+		a().getStatus();
+
+
+	}
+
+}
+
+
+
+
+</script>
 </body>
 </html>

@@ -1,13 +1,10 @@
-$ht60:60px;
-$red:#10a5dd;
-
-.topbar{
-	height:$ht60;
-	background:$red;
+svg * {
+				fill: none;
+				stroke: currentColor;
 }
 
-html,body{height:100%;overflow:hidden}
-
-.warp{height:100%;overflow:hidden}
-
-.leftmenubar{width:200px;float:left;height:100%;background:#666;overflow:hidden}
+.obturateur {
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+	color:#FF495F;
+}
